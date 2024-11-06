@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Integrity Guide</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            margin-bottom: 0;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #34495e;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #backToTop:hover {
+            background-color: #2c3e50;
+        }
+        header button{
+            padding: 14px;
+            font-weight: 450px;
+            background-color: #2980b9;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button><a href="index.html">Back</a></button>
+        <h1>Academic Integrity Guide</h1>
+    </header>
+
+    <div class="section" id="understanding">
+        <h2>1. Understanding Academic Integrity</h2>
+        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Students studying in a library">
+        <p>Academic integrity is the commitment to and demonstration of honest and moral behavior in an academic setting. This is most relevant at the university level and is a fundamental value in teaching, learning, and research.</p>
+           </div>
+
+    <div class="section" id="misconduct">
+        <h2>2. Types of Examination Misconduct</h2>
+        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Student taking an exam">
+        <p>Examination misconduct includes various forms of cheating, such as copying, using unauthorized materials, impersonation, and collusion. It's crucial to understand these types to avoid unintentional violations.</p>
+           </div>
+
+    <div class="section" id="plagiarism">
+        <h2>3. Plagiarism and How to Avoid It</h2>
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Person writing in a notebook">
+        <p>Plagiarism is the act of using someone else's work or ideas without proper attribution. Learn about proper citation methods, paraphrasing techniques, and tools to check for unintentional plagiarism.</p>
+           </div>
+
+    <div class="section" id="consequences">
+        <h2>4. Consequences of Cheating</h2>
+        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Gavel on a desk">
+        <p>Cheating can have severe consequences, including failing grades, suspension, expulsion, and long-term impacts on your academic and professional career. Understanding these consequences reinforces the importance of academic integrity.</p>
+           </div>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script>
+        // Back to Top button functionality
+        let backToTopButton = document.getElementById("backToTop");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        backToTopButton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
